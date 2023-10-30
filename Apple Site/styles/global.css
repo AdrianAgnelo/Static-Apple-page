@@ -1,0 +1,168 @@
+:root {
+    --bg-black: #000000;
+    --text-light: #ffffff;
+    --title-primary: #f5f5f7;
+    --subtitle-color: #6e6e73;
+    --action-color: #2997ff;
+    --spirited-main-color: #ded2b9;
+    --text-dark: #1d1d1f; 
+}
+
+header {
+    background-color: var(--bg-black);
+    color: var(--text-light);
+    height: fit-content;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 12px 0;
+}
+
+header nav ul {
+    margin: 0 auto;
+    width: fit-content;
+    display: flex;
+    gap: 1rem;
+    padding: 0 2rem;
+}
+
+header nav ul li {
+    min-width: fit-content;
+    height: fit-content;
+    padding: 0 0.75rem;
+    font-size: small;
+    cursor: pointer;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+main section {
+    text-align: center;
+    position: relative;
+}
+
+main section img {
+    width: 100%;
+    height: auto;
+}
+
+main .main-section h1 {
+    color: var(--title-primary);
+    font-size: 3rem;
+    font-weight: bold;
+    list-style: 4rem;
+    letter-spacing: -0.28px;
+}
+
+main .main-section h2 {
+    color: var(--subtitle-color);
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 2rem;
+    letter-spacing: 0.11px;
+    margin-bottom: 1rem;
+}
+
+main section a {
+    color: var(--action-color);
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+main section a:hover {
+    text-decoration: underline;
+}
+
+main .main-section sub {
+    font-size: 0.9rem;
+}
+
+main .main-section .text-wrapper {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 51px;
+}
+
+
+main .spirited-section > div {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+main .spirited-section > div:last-child {
+    bottom: 50px;
+}
+
+main .spirited-section > div:first-child {
+    top: 105px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 60%;
+}
+
+main .spirited-section > div:first-child p {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+    color: var(--spirited-main-color);
+    letter-spacing: -0.6px;
+}
+
+main .spirited-section p {
+    color: var(--text-light);
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    letter-spacing: 0.11px;
+}
+
+main .spirited-section span {
+    color: var(--title-primary);
+    font: 1.2rem;
+    line-height: 1.5rem;
+    display: block;
+    letter-spacing: 0.11px;
+}
+
+main .iphone-section h2 {
+    color: var(--text-dark);
+    font-size: 3rem;
+    font-weight: bold;
+    list-style: 4rem;
+    letter-spacing: -0.28px;
+}
+
+main .iphone-section p {
+    color: var(--text-dark);
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 2rem;
+    letter-spacing: 0.11px;
+    margin-bottom: 1rem;
+}
+
+main .iphone-section .link-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+}
+
+main .iphone-section .text-wrapper {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 51px;
+}
